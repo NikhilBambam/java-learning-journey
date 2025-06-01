@@ -1,3 +1,4 @@
+import java.util.*;
 public class BinomailCoefficient {
     public static int fact(int n)
     {
@@ -16,6 +17,12 @@ public class BinomailCoefficient {
         System.out.println("The binomial coefficient is :"+result);
     }
     public static void main(String[] args) {
-        binCoeff(5, 2);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Value of n :");
+        int n= sc.nextInt();
+        System.out.println("Enter the value of r :");
+        int r=sc.nextInt();
+        binCoeff(n, r);
+        sc.close();
     }
 }
