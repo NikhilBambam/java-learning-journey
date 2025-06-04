@@ -1,3 +1,4 @@
+import java.util.*;
 public class Question07 {
     public static boolean isPrime(int n)
     {
@@ -17,12 +18,16 @@ public class Question07 {
         return true;
     }
     public static void main(String[] args) {
-        if(isPrime(6))
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter The number :");
+        int n=sc.nextInt();
+        if(isPrime(n))
         {
             System.out.println(" prime number ");
         }
         else{
             System.out.println("Not a prime Number");
         }
+        sc.close();
     }
 }
